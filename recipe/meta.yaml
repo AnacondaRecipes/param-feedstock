@@ -20,7 +20,7 @@ requirements:
     - python
     - setuptools
   run:
-    - python >=2.7
+    - python
 
 test:
   requires:
