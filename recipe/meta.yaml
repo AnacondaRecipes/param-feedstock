@@ -34,11 +34,8 @@ test:
     - pytest
     - pytest-cov
     - flake8
-  source_files:
-    - tests
   commands:
     - pip check
-    - pytest tests --cov=numbergen --cov=param --cov-append --cov-report xml
 
 about:
   home: http://ioam.github.io/param/
