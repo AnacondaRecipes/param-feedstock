@@ -1,13 +1,13 @@
 {% set name = "param" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2ef63ef7aef37412eeb8ee3a06189a51f69c58c068824ae070baecb5b2abd0b8
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: ba1f7cec6455ea8ad96f641f4082759bf1057dcbe629aa79d956b25973252422
 
 build:
   number: 0
@@ -37,7 +37,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Param: Make your Python code clearer and more reliable by declaring Parameters'
+  summary: Param: Make your Python code clearer and more reliable by declaring Parameters
   description: |
     Param is a library providing Parameters: Python attributes
     extended to have features such as type and range checking,
