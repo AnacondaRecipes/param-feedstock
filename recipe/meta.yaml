@@ -1,5 +1,5 @@
 {% set name = "param" %}
-{% set version = "2.3.0" %}
+{% set version = "2.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b7e2b9c1d308d93c641937330990e8254aef479682c930b36ab681c4587d999a
+  sha256: 84e59fc3a9bfb0e4c8100eb92d5be529deea3ec9c1f0881a0068c5caf31f21f3
 
 build:
   # trigger 1
@@ -62,4 +62,3 @@ extra:
     - jlstevens
     - philippjfr
     - maximlt
-
