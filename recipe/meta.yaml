@@ -34,7 +34,7 @@ test:
     - pip check
 
 about:
-  home: https://param.holoviz.org
+  home: https://param.holoviz.org/en/docs/latest/
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
@@ -52,7 +52,7 @@ about:
     These capabilities power HoloViz projects like Panel and HoloViews,
     making Param a solid foundation for building validated,
     introspectable, and responsive libraries and applications.
-  doc_url: https://param.holoviz.org
+  doc_url: https://param.holoviz.org/en/docs/latest/
   dev_url: https://github.com/holoviz/param
 
 extra:
