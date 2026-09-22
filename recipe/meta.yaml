@@ -9,6 +9,8 @@ source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 40ca94b72c97bf1998325738e002d589ce31a7cfb4cc56549f05daa6ccf98043
 
+# Upstream source:
+# https://github.com/holoviz/param/blob/v2.4.2/pyproject.toml
 build:
   number: 0
   script:
@@ -25,13 +27,19 @@ requirements:
     - python
 
 test:
+  source_files:
+    - tests
+    - pyproject.toml
   imports:
     - param
     - numbergen
   requires:
     - pip
+    - pytest
+    - pytest-asyncio
   commands:
     - pip check
+    - python -m pytest -vv tests -o python_files="test*.py"
 
 about:
   home: https://param.holoviz.org/en/docs/latest/
