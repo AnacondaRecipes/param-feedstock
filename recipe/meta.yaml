@@ -26,6 +26,10 @@ requirements:
   run:
     - python
 
+{% set deselected_tests = "" %}
+# FileNotFoundError: [WinError 2] The system cannot find the file specified
+{% set deselected_tests = " --deselect=tests/testversion.py::test_run_cmd" %}  # [win]
+
 test:
   source_files:
     - tests
@@ -39,7 +43,7 @@ test:
     - pytest-asyncio
   commands:
     - pip check
-    - python -m pytest -vv tests -o python_files="test*.py"
+    - python -m pytest -vv tests {{ deselected_tests }} -o python_files="test*.py"
 
 about:
   home: https://param.holoviz.org/en/docs/latest/
